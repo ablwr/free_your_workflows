@@ -77,8 +77,7 @@
                	These two concepts often are not paired together. 
               </p>
               <aside class="notes">
-                  Yet, often, these two things don’t necessarily go hand and hand with each other. We’re more concerned, and rightly so, with making our materials accessible to patrons. But, I think it's possible that if we focused on making our processes and workflows more accessible to each other, this could also impact how we can make more materials more accessible. 
-                  
+                  Yet, often, these two things don’t necessarily go hand and hand with each other. We’re more concerned, and rightly so, with making the materials we have in our collections accessible to patrons. But, I think it's possible that if we focused on making our processes and workflows more accessible to each other, this could also impact how we can make more materials more accessible
               	
               </aside>
           </section>
@@ -265,6 +264,7 @@
                   git
               </p>
               <aside class="notes">
+                 what are some general tools that can help facilitate this process of open sourcing workflows? I think one of the most promising is git, either from the command line or through some graphical user interface. GitHub, as I think most of us know, is a code repository. I see github as a tool for hosting documentation from different institutions into once place. I think something like github gets seen by archivists as not relevant to the work that they do because they don’t write scripts, but in actuality, the website could be built out to be so much  more. the github website doesn’t only have to be a repository for code- it could also contain documentation that gets written out narratively, such as PDFs or readmes that outline an institution’s workflow and specifications. To use github in this capacity would be really exciting, and it would get us a lot closer to an open workflows world
               	
               </aside>
               </section>
@@ -273,6 +273,7 @@
                   Library Workflow Exchange
               </p>
               <aside class="notes">
+                Library workflow exchange is not really a tool, but it is a space that I find exciting, with regards to sharing knowledge about library and archival workflows. i can’t speak to exactly how this site works, and their about page doesn’t offer much information, but I know that when I posted about CUNY TV’s workflows in a blog post, it showed up on the website. there’s also options to self-submit your workflow. I guess my dream is to have some sort of searchable database or repository that institutions could deposit their workflows into, and this project gets us closer to that. This type of site is well suited for workflows that get written up in a narrative style. 
               	
               </aside>
               </section>
@@ -296,11 +297,16 @@
               </aside>
           </section>
           
-          <section>
+          <section data-background="img/mediamicroservices.gif">
               <p>
                   media microservices
               </p>
               <aside class="notes">
+                 media microservices are a set of open source micro service scripts that I’ve been working on as part of my time as a national digital stewardship resident at CUNY television. media microservices use the open source software ffmpeg transcode, create metadata for, package, and deliver digital audio visual files. they are open source and available for download from github or using the package manager homebrew. at cuny TV, the scripts perform much of the labor of processing digital media, so they essentially are the archiving and preservation workflow, which is necessary given the amount of content we work with and the numerous other time consuming tasks that the archive and library performs.
+
+what’s useful about implementing a microservices approach is that we can make modifications to individual processes without having to overhaul the entire workflow, and add in new functionality when needed. we also aren’t restricted to one workflow imposed by a software system, which makes it easier to adapt as technology changes.
+
+it is possible for media microservices to be adapted by other institutions relatively easily. media microservices come with a configuration file that can be set up to process and deliver based on local needs, and there’s comprehensive instructions as part of the readme. 
               	
               </aside>
           </section>
@@ -309,14 +315,18 @@
                   vrecord
               </p>
               <aside class="notes">
+                 another example of an open workflow is vrecord, which is open source audio visual digitization software. vrecord was initially created at cuny television, following a hardware and software update that made the software final cut pro unusable for digitization. vrecord is downloadable via git hub and homebrew, and has grown into a project that is worked on by many individuals at various institutions. vrecord uses the open source software, ffmpeg and works with black magic design capture hardware and the open source software development kit
+
+thanks to the help of an intern last semester, a substantial readme was created for vrecord, which outlines how to set up a digitization workflow using vrecord. although vrecord doesn’t solve the problem of expensive and difficult to obtain hardware needed for digitization, it is a viable option for institutions looking to migrate their magnetic media and who want to use and participate in open source software developement.
               	
               </aside>
           </section>
           <section data-background="img/elaine.gif">
               <p>
-                  drawbacks and challenges
+                  challenges
               </p>
               <aside class="notes">
+                with regards to media microservices, i’ve had some challenges in designing effective documentation of how the scripts could be used at other institutions. ive tried doing instructional videos, but they are time consuming, and quickly can become out of date if there are any changes to the functionality of the scripts. i’m hoping to build out a github site for them, with the idea that a more user friendly interface than the github readme will help, and i’d like to make short gifs showing how some of the microservices work.
 
               </aside>
           </section>
