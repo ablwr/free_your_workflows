@@ -41,7 +41,8 @@
                   open sourcing audio visual archiving and preservation workflows, software, and file formats
               </p>
               <aside class="notes">
-              	
+              	  This talk is based on a talk we’ll be giving at code4lib, we welcome any feedback and thoughts about what we’re saying 
+                  Introduce myself and introduce Dinah who can introduce herself
               </aside>
           </section>
       <section>
@@ -87,18 +88,66 @@
                   PRACTICE
               </h2>
               <aside class="notes">
-              	
+              	But there’s not enough of this theory put into practice!
               </aside>
           </section>
 
-          <section>
-              <p>
+        <section>
+            <section>
+                <p>
                	Why the gap between theory and practice?
-              </p>
-              <aside class="notes">
+                </p>
+                <aside class="notes">
               	
-              </aside>
-          </section>
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                Time & Money
+                </p>
+                <aside class="notes">
+                There’s not enough, but it’s not our fault! Time and money, like with many things, play a huge role in our ability to turn project dreams into reality.
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                Writing the docs
+                </p>
+                <aside class="notes">
+                Writing documentation is hard! It’s a real skill to bridge the gap between a code base and human comprehension.
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                Scary
+                </p>
+                <aside class="notes">
+                It’s also scary to put things out there on the internet. There’s a shared sense of imposter syndrome, regardless of the effort made or size of the institution, that the code will be “not good enough.” Not enough tests, the code “isn’t clean enough,” or not enough documentation.
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                Feedback
+                </p>
+                <aside class="notes">
+                It can also be hard to deal with feedback. Of course dealing with negative feedback is hard, but even having to spend time answering questions or clarifying or helping other people use your codebase takes time that is likely not allocated and dedicated to that cause.
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                A/V
+                </p>
+                <aside class="notes">
+                On top of all of this, a/v is *really* hard compared to text or images, especially when someone is more of a generalist. Codecs wrappers, format migration, the differences between digital and analog, or even trying to answer *what video is* can be challenging. From an archival standpoint, quick initial accessioning just isn’t a reality because in analog video and some digital video, files can’t even be played back prior to migration. And once analog materials are migrated to a stable digital format, the filesizes are huge. And their care can be made further burdensome by a diverse range of formats, and there’s no one generally accepted archival-grade format. Just a lot of opinions. And not one format is gonna work for every institution.
+                </aside>
+            </section>
+        </section>
+
       <section>
           <section>
               <p>
@@ -156,7 +205,7 @@
                     many hands make light work (and less stress)
                 </p>
                 <aside class="notes">
-                	Ashley's part
+                	When thinking again about the gap between theory and practice, a lot of this weighs more heavily if the codebase burden is just on one person or institution, and can be alleviated when a project exists collaboratively.
                 </aside>
               </section>
               <section>
@@ -164,7 +213,7 @@
                       staying alive
                   </p>
                   <aside class="notes">
-                  	Ashley's part
+                  	More likely to keep project alive and thriving when many people care about it. As librarians, I think we’re familiar with vendor lock keeping an institution locked into one system by preventing free access to their own data. But with our software, we should be aware of institution-lock. How can we create things that can be extended to other institutions?
                   </aside>
               </section>
               <section>
@@ -172,7 +221,7 @@
                       Sharing vulnerability
                   </p>
                   <aside class="notes">
-                  	Ashley's part
+                  	Sharing vulnerability makes the project stronger. Knowing that your project is out there will make your project stronger. And having more people use the same project will help you discover bugs.
                   </aside>
               </section>
               <section>
@@ -180,7 +229,7 @@
                       Global impact
                   </p>
                   <aside class="notes">
-                  	Ashley's part
+                  	Global impact (not restricted to one geographical location)
                   </aside>
               </section>
               <section>
@@ -188,7 +237,7 @@
                       Tangibility
                   </p>
                   <aside class="notes">
-                  	Ashley's part
+                  	Having open workflows makes what are usually described as abstract processes tangible-- I used x software, y type of storage, my AIP package looks like z, etc. 
                   </aside>
               </section>
               <section>
@@ -196,7 +245,9 @@
                       Microservices (at institutional level)
                   </p>
                   <aside class="notes">
-                  	Ashley's part
+                  	Implementation can be translated across institutions.
+
+                    At NYPL, on my team, we really strive for a microservices approach to development. We want to have the ability to switch out any one part of a project for something better that comes along, and not have everything tangled up in one, overly large application. And we do this by having clear end-points to send data from one place to another.  What better way to know that one software component of your overall workflow can be swapped out in the future than if it can also easily be swapped into another institution's code base?
                   </aside>
               </section>
 	          </section>
@@ -284,7 +335,7 @@
                     QCTools
                 </p>
                 <aside class="notes">
-                	
+                	QCTools is a project I work on. It’s software that helps detect problems in digitized analog video. “Digitized analog video.” -- I know, it sounds very specific but there are a lot of concerns specific to this issue.
                 </aside>
               </section>
               <section>
@@ -292,12 +343,16 @@
                     MediaConch
                 </p>
                 <aside class="notes">
-                	
+                	MediaConch is another project I’m on. It’s for video file conformance checking. It’s so your video files are what they say they are. This is funded by the European Commission, and the software is required to be open source. With MediaConch, we work in the open. Very, very in the open. There is plenty of really gnarly XSLs written by yours truly in our repos, which are all public.
+
+                    MediaConch is based out of MediaInfo, which is… I’d say the most-used media microservice among information professionals. MediaInfo gives you information about your files! But more importantly, it does it very quickly, and even works on partial files that are in transit. So it’s very easy to integrate MediaInfo into much larger projects (and this is what we intend to do with MediaConch too).
+
+                    An example of integration of these tools is within Artefactual’s Archivematica, which uses mediainfo and will soon be using mediaconch, as part of the suite of services that get files into digital long-term preservation-level storage. 
                 </aside>
               </section>
               <section>
                 <p>
-                    ffmprovisr
+                    ffmprovisr is a good example of a small project that helps many people at a lot of different institutions, and has had work contributed by people at many institutions. It’s a platform for sharing very small scripts. I had made this project on my own for fun, but I was usually too lazy to work on it. I pitched it at the last AMIA conference and now it’s a fairly active project. It got restructured and made better on the day with a team of around 10 people, and I hope that people feel a certain ownership of the project, which I transferred to the amiaopensource Github account. And there’s been a lot of collaboration in the Issues section and through pull requests, even with contributions from FFmpeg contributors.
                 </p>
                 <aside class="notes">
                 	
@@ -306,6 +361,7 @@
           </section>
 
           <section>
+              <img src="img/free_your_mind.jpg"/>
               <p>
                   ... and the rest will follow ...
               </p>
