@@ -246,7 +246,7 @@
                   General tools
               </p>
               <aside class="notes">
-              	
+              	what are some general tools that can help facilitate this process of open sourcing workflows?
               </aside>
               </section>
               <section>
@@ -255,8 +255,7 @@
                   git-init 
               </p>
               <aside class="notes">
-                 what are some general tools that can help facilitate this process of open sourcing workflows? I think one of the most promising is git, either from the command line or through some graphical user interface. I work with Github a lot, and I see it as a possible centralized tool for hosting workflow documentation from different institutions. Sometimes, I think something like github gets seen by archivists as not relevant to the work that they do because they don’t write code, but in actuality, a github repository can be built out to be so much more. the github website doesn’t only have to be a repository for code- it could also contain documentation of workflows, such as PDFs or readmes in markdown that outline an institution’s workflow and specifications. I really like York University Library's institutional GitHub account, which houses both scripts used in the library and also digital preservation policy documentation. A benefit of using github for workflow and policy documentation is version control- it allows for the public to see how and why a workflow or policy has changed, which provides greater transparency into archival labor. To use github in this capacity would be really exciting, and it would get us a lot closer to an open source workflows. 
-              	
+                  I think one of the most promising tools is git, either from the command line or through some graphical user interface. I work with Github a lot, and I see it as a possible centralized tool for hosting workflow documentation from different institutions. Sometimes, I think something like github gets seen by archivists as not relevant to the work that they do because they don’t write code, but in actuality, a github repository can be built out to be so much more. the github website doesn’t only have to be a repository for code- it could also contain documentation of workflows, such as PDFs or readmes in markdown that outline an institution’s workflow and specifications. A benefit of using github for workflow and policy documentation is version control- it allows for the public to see how and why a workflow or policy has changed, which provides greater transparency into archival labor. Some libraries and archives already do this, and it's awesome to see.     	
               </aside>
               </section>
               <section>
@@ -265,7 +264,7 @@
                   Library Workflow Exchange
               </p>
               <aside class="notes">
-                Library workflow exchange is not really a tool, but it is a space that I find exciting, with regards to sharing knowledge about library and archival workflows. the two librarians- Liz Woolcott and Anna Neatrour, that started library workflow exchange share the same dream that I do- "a magical database that would allow us to find out what other libraries are doing to automate workloads" and so they started the website library workflow exchange. there’s options to self-submit your workflow for institutions that don't have the availability to host on institutional websites, and the site "pulls workflows from websites, blogs, conference presentations, Github, and a host of other places". 
+                Library workflow exchange is not really a tool, but it is a space that I find exciting, with regards to sharing knowledge about library and archival workflows. the two librarians- Liz Woolcott and Anna Neatrour, that started library workflow exchange share the same dream that I do- quote "a magical database that would allow us to find out what other libraries are doing to automate workloads" and so they started the library workflow exchange. there’s options to self-submit your workflow for institutions that don't have the availability to host on institutional websites, and the site "pulls workflows from websites, blogs, conference presentations, Github, and a host of other places". 
               	
               </aside>
               </section>
@@ -277,7 +276,7 @@
                   Dinah's things
               </p>
               <aside class="notes">
-              	Now I'm going to talk about two pieces of software that are examples of what we mean by open-sourcing workflows. 
+              	Now I'm going to talk about two pieces of software that are examples of what we mean by open-sourcing audio visual workflows. 
               </aside>
           </section>
           
@@ -286,7 +285,7 @@
                   media microservices
               </p>
               <aside class="notes">
-                 media microservices are a set of open source micro service scripts that I’ve been working on as part of my time as a national digital stewardship resident at CUNY television. media microservices are written in bash, and perform much of the labor of processing digital media, so they essentially are the archiving and preservation workflow, and much of our documentation of how they work or what they do is stored in the comments within the code. media microservices also use other open source software, most importantly ffmpeg, but also mediainfo, rsync, etc. 
+                 media microservices are a set of open source micro service scripts that I’ve been working on as part of my time as a national digital stewardship resident at CUNY television. media microservices are written in bash, and perform much of the labor of processing digital media, so they essentially are the archiving and preservation workflow, and much of our documentation of how they work or what they do is stored in the comments within the code. 
 
 as Ashley noted earlier, what’s useful about implementing a microservices approach is that we can make modifications to individual processes without having to overhaul the entire workflow, and add in new functionality when needed. we also aren’t restricted to one workflow imposed by a software system, which makes it easier to adapt as technology changes. we also try and think about making the code itself reusable - we try and repurpose already written functions and code snippets rather than developing new methods for doing things from scratch each time.
 
@@ -299,9 +298,7 @@ it is possible for media microservices to be adapted by other institutions relat
                   vrecord
               </p>
               <aside class="notes">
-                 another example of an open workflow is vrecord, which is open source audio visual digitization software. vrecord was initially created at cuny television, following a hardware and software update that made the software final cut pro unusable for digitization. vrecord is downloadable via git hub and homebrew, and has grown into a project that is worked on by many individuals at various institutions. vrecord uses the open source software ffmpeg and works with black magic design's open source software development kit
-
-thanks to the help of an intern last semester, a substantial readme was created for vrecord, which outlines how to set up a digitization workflow using vrecord. although vrecord doesn’t solve the problem of expensive and difficult to obtain hardware needed for digitization, it is a viable option for institutions looking to migrate their magnetic media and who want to use and participate in open source software developement.
+                 another example of an open source av workflow is vrecord, which is open source audio visual digitization software. vrecord was initially created at cuny television, following a hardware and software update that made the proprietary software final cut pro unusable for digitization. vrecord is downloadable via git hub and homebrew, and has grown into a project that is worked on by many individuals at various institutions. vrecord uses the open source software ffmpeg and works with black magic design's open source software development kit. Vrecord doesn’t solve the problem of expensive and difficult to obtain hardware needed for digitization, it does make digitization more accessible. 
               	
               </aside>
           </section>
