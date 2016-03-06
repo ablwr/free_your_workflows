@@ -133,14 +133,14 @@
             <section data-background="img/av_hard.gif">
                 <h3>A/V is hard!</h3>
                 <aside class="notes">
-                On top of all of this, a/v is *really* hard compared to text or images, especially when someone is more of a generalist. Codecs wrappers, format migration, the differences between digital and analog, or even trying to answer *what video is* can be challenging. From an archival standpoint, quick initial accessioning just isn’t a reality because in analog video and some digital video, files can’t even be played back prior to migration. And once analog materials are migrated to a stable digital format, the filesizes are huge. And their care can be made further burdensome by a diverse range of formats, and there’s no one generally accepted archival-grade format. Just a lot of opinions. And not one format is gonna work for every institution.
+                On top of all of this, a/v is *really* hard compared to text or images, especially when someone is more of a generalist. Codecs wrappers, format migration, the differences between digital and analog, or even trying to answer *what video is* can be challenging. From an archival standpoint, quick initial accessioning just isn’t a reality because in analog video and some digital video, files can’t even be played back prior to migration. And once analog materials are migrated to a stable digital format, the filesizes are huge. And their care can be made further burdensome by a diverse range of formats, and there’s no one generally accepted archival-grade format. Just a lot of opinions. And not one format is gonna work for every institution. A small insitution's solution is probably not going to be the same as Library of Congress's solution (for example).
                 </aside>
             </section>
 
             <section data-background="img/boop.gif">
                 <h3>A/V is hard!</h3>
                 <aside class="notes">
-                Historically a/v has had to deal with proprietary formats and software moreso than other forms of media found in libraries, likely due to their complexity. Processing power of the average consumer computer has caught up with the needs of processing a/v materials, so standard video cards are sufficient for doing processing of archival-grade uncompressed digitized film and video.
+                Historically a/v has had to deal with proprietary formats and software moreso than other forms of media found in libraries, likely due to their complexity and large file sizes. Processing power of the average consumer computer has only recently caught up with the needs of processing a/v materials, so standard video cards are sufficient for doing processing of archival-grade uncompressed digitized film and video. So we can now do in-house what we used to have to rely on vendors and companies to do for us.
                 </aside>
             </section>
         </section>
@@ -194,7 +194,7 @@
                 #goals
                 </h1>
                 <aside class="notes">
-                	Here are some of the benefits of working in the open.
+                	Earlier I talked about the fears of working in the open, but here are some of the benefits of working in the open.
                 </aside>
               </section>
               <section data-background="img/robothand.gif">
@@ -202,7 +202,7 @@
                     many hands make light work (and less stress)
                 </h3>
                 <aside class="notes">
-                	When thinking again about the gap between theory and practice, a lot of this weighs more heavily if the codebase burden is just on one person or institution, and can be alleviated when a project exists collaboratively.
+                	When thinking again about the gap between theory and practice, a lot of this weighs more heavily if the codebase burden is just on one person or institution (or one person AT one institution), and can be alleviated when a project exists collaboratively.
                 </aside>
               </section>
               <section data-background="img/growth.gif">
@@ -210,7 +210,7 @@
                       staying alive
                   </h3>
                   <aside class="notes">
-                  	More likely to keep project alive and thriving when many people care about it. As librarians, I think we’re familiar with vendor lock keeping an institution locked into one system by preventing free access to their own data. But with our software, we should be aware of institution-lock. How can we create things that can be extended to other institutions?
+                  	Staying alive. More likely to keep project alive and thriving when many people care about it. As librarians, I think we’re familiar with vendor lock keeping an institution locked into one system by preventing free access to their own data. But with our software, we should be aware of institution-lock. How can we create things that can be extended to other institutions?
                   </aside>
               </section>
               <section data-background="img/error.gif">
@@ -218,7 +218,7 @@
                       Sharing vulnerability
                   </h3>
                   <aside class="notes">
-                  	Sharing vulnerability makes the project stronger. Knowing that your project is out there will also make your project stronger. And having more people using your project project will help you discover bugs and make it better.
+                  	Sharing vulnerability makes the project stronger. Knowing that your project is out there will also make your project stronger. And having more people using your project will help you discover bugs and make it better.
                   </aside>
               </section>
               <section data-background="img/network.gif">
@@ -243,9 +243,9 @@
                       Microservices (at institutional level)
                   </p>
                   <aside class="notes">
-                  	Implementation can be translated across institutions.
+                  	To bring this around to practice, implementation can be translated across institutions.
 
-                    At NYPL, on my team, we really strive for a microservices approach to development, and I'm speaking about microservices in a larger context than our primary definition in this talk. We want to have the ability to switch out any one part of a project for something better that comes along, and not have everything tangled up in one, overly large application. And we do this by having clear end-points to send data from one place to another.  What better way to know that one software component of your overall workflow can be swapped out in the future than if it can also easily be swapped into another institution's code base?
+                    At NYPL, on my team, we really strive for a microservices approach to development, and I'm speaking about microservices in a larger context than our primary definition in this talk. We want to have the ability to switch out any one part of a project for something better that comes along, and not have everything tangled up in one, overly large, bloated application. (I know y'all know what I'm talking about) And we do this by having clear end-points to send data from one place to another. BUT What better way to know that one software component of your overall workflow can be swapped out in the future than if it can also easily be swapped into another institution's code base?
                   </aside>
               </section>
 	          </section>
@@ -314,10 +314,10 @@
           <section>
               <section>
                 <p>
-                    Ashley's projects
+                  Ashley's projects
                 </p>
                 <aside class="notes">
-                	
+                	I'm going to talk about a few projects that are microservices that are developed in the open, or supplemental non-programming-specific projects that are in the open.
                 </aside>
               </section>
               <section>
@@ -365,7 +365,7 @@
                 <p>
                 </p>
                 <aside class="notes">
-                  MediaConch and Artefactual use Matroska, which is an open video format currently being standardized through the Internet Engineering Task Force's CELLAR (Codec Encoding for LossLess Archiving and Realtime transmission) working group.
+                  MediaConch and Artefactual use Matroska, which is an open video format currently going through the standardization process via the Internet Engineering Task Force's CELLAR (Codec Encoding for LossLess Archiving and Realtime transmission) working group. This is to really ensure their longevity as a recommended digital preservation file format.
                 </aside>
               </section>
               <section>
@@ -381,7 +381,7 @@
                 <p>
                 </p>
                 <aside class="notes">
-                  ffmprovisr is a good example of a small project that helps many people at a lot of different institutions, and has had work contributed by people at many institutions. It’s a platform for sharing very small scripts. There’s been a lot of collaboration in the Issues section and through pull requests, even with contributions from FFmpeg contributors.
+                  ffmprovisr is a good example of a small project that helps many people at a lot of different institutions, and has had work contributed by people at many institutions. It’s a platform for sharing very small scripts -- FFmpeg scripts. It's hosted on the AMIA Open Source committee's github page. There’s been a lot of collaboration in the Issues section and through pull requests, even with contributions from FFmpeg contributors. It's great to see so many people come together and share knowledge.
                 </aside>
               </section>
               <section>
@@ -398,14 +398,6 @@
                 </p>
                 <aside class="notes">
                   A/VAA is a wiki for sharing video playback problems where people can contribute their video playback errors, explain or describe problems, or figure out why their videos look weird. 
-                </aside>
-              </section>
-              <section>
-                <p>
-                    These are all microservices!
-                </p>
-                <aside class="notes">
-                  These are microservices!
                 </aside>
               </section>
           </section>
@@ -435,7 +427,7 @@
                   </ul>
                 </p>
                 <aside class="notes">
-                In conclusion... your projects can grow beyond your own institution, more people provide more perspectivies, more contributions make projects better, and we can provide each other with supportive environments.
+                In conclusion... your projects can grow beyond your own institution. More people provide more perspectives. More contributions make projects better, and we can provide each other with supportive environments.
                 </aside>
             </section>
 
@@ -463,9 +455,10 @@
                 <ul>
                   <li><strong>These slides: github.com/ablwr/free_your_workflows</strong></li>
                   <li>github.com/mediamicroservices/mm</li>
+                  <li>github.com/amiaopensource/vrecord</li>
+                  <li>libraryworkflowexchange.org</li>
                   <li>github.com/mediaarea/mediaconch</li>
                   <li>github.com/bavc/qctools</li>
-                  <li>github.com/amiaopensource/vrecord</li>
                   <li>github.com/amiaopensource/ffmprovisr</li>
                   <li>avaa.bavc.org</li>
                 </ul>
